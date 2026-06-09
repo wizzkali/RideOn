@@ -1,0 +1,490 @@
+[
+  {
+    "handle": "surge-v",
+    "title": "Surge V",
+    "vendor": "Y-VOLT",
+    "type": "Electric Bike",
+    "priceEur": 7600.0,
+    "priceUsd": 7600.0,
+    "image": "https://www.yvolt.com/cdn/shop/files/main-9.jpg?v=1770282448&width=1600",
+    "images": [
+      "https://www.yvolt.com/cdn/shop/files/main-9.jpg?v=1770282448&width=1600",
+      "https://www.yvolt.com/cdn/shop/files/main-3-t.jpg?v=1774230027&width=1600",
+      "https://www.yvolt.com/cdn/shop/files/main-20.jpg?v=1774230027&width=1600",
+      "https://www.yvolt.com/cdn/shop/files/main-10.jpg?v=1774230027&width=1600",
+      "https://www.yvolt.com/cdn/shop/files/main-17.jpg?v=1774230027&width=1600",
+      "https://www.yvolt.com/cdn/shop/files/DSC03186.jpg?v=1770283206&width=1600"
+    ],
+    "description": "Y-VOLT Surge V — Electric dirt bike. 48HP, 35kW peak power, 948Nm wheel torque, 4.3 kWh battery (97.2V 45Ah), up to 150 km range (Eco), 3h full charge. 204 lbs. 1-year warranty.",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v"
+  },
+  {
+    "handle": "helmet",
+    "title": "Helmet",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 259.0,
+    "priceUsd": 259.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/helmet-1.jpg?v=1767001690",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/helmet-1.jpg?v=1767001690",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/helmet-2.jpg?v=1767001690",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/helmet-3.jpg?v=1767001690",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Off-Road_Helmet_1.jpg?v=1779527971"
+    ],
+    "description": "Y-VOLT Exclusive helmet",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/helmet"
+  },
+  {
+    "handle": "supermoto-wheel-set",
+    "title": "Supermoto Wheel Set",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 599.0,
+    "priceUsd": 599.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/supermoto_wheels.png?v=1772786614",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/supermoto_wheels.png?v=1772786614",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/tire-1.jpg?v=1772786614",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/tire-2.jpg?v=1772786614"
+    ],
+    "description": "Touring Tire (Brand: Chao Yang)\n\n\nSection Width: 140 mm\n\n\nAspect Ratio: 70%\n\n\nRim Diameter: 17 in\n\n\nTire Type: M/C\n\n\nLoad Index: 66 (300 kg per tire)\n\n\nSpeed Rating: S (180 km/h)",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/supermoto-wheel-set"
+  },
+  {
+    "handle": "surge-v-break-system",
+    "title": "Surge V Break System",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 240.0,
+    "priceUsd": 240.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/brake-1.jpg?v=1776766962",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/brake-1.jpg?v=1776766962",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/brake-2.jpg?v=1776766962",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/brake-3.jpg?v=1776766962",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/brake-4.jpg?v=1776766962",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Brake_Lever_1.jpg?v=1779527344",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Brake_Lever_4.jpg?v=1779527343"
+    ],
+    "description": "Brakes\n\nFront: 4-piston caliper, 220mm hydraulic discRear: 4-piston caliper, 220mm hydraulic discPlease note that if you need individual brake system parts, please contact our customer service and we will supply them separately.",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-break-system"
+  },
+  {
+    "handle": "surge-v-rear-cover",
+    "title": "Surge V Rear Cover",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 18.0,
+    "priceUsd": 18.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Taillightcover_black_2.jpg?v=1779519665",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Taillightcover_black_2.jpg?v=1779519665",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Taillightcover_white_1.jpg?v=1779519665"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-rear-cover"
+  },
+  {
+    "handle": "surge-v-rearlight",
+    "title": "Surge V Rearlight",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 19.0,
+    "priceUsd": 19.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rear_Brankinglight_1.jpg?v=1779528749",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rear_Brankinglight_1.jpg?v=1779528749",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rear_Brankinglight_2.jpg?v=1779528748"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-rearlight"
+  },
+  {
+    "handle": "surge-v-disc-pad",
+    "title": "Surge V Disc Pad",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 34.0,
+    "priceUsd": 34.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Discpad_2.jpg?v=1779516049",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Discpad_2.jpg?v=1779516049",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Discpad_1.jpg?v=1779516049"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-disc-pad"
+  },
+  {
+    "handle": "surge-v-rear-sprocket",
+    "title": "Surge V Rear Sprocket",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 69.0,
+    "priceUsd": 69.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearSprocket_2.jpg?v=1779364517",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearSprocket_2.jpg?v=1779364517",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearSprocket_1.jpg?v=1779364516"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-rear-sprocket"
+  },
+  {
+    "handle": "surge-v-bottom-cover-bracket",
+    "title": "Surge V Bottom Cover Bracket",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 13.9,
+    "priceUsd": 13.9,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Bottomcoverbracket.jpg?v=1779530474",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Bottomcoverbracket.jpg?v=1779530474"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-bottom-cover-bracket"
+  },
+  {
+    "handle": "surge-v-fender-1",
+    "title": "Surge V Fender",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 21.0,
+    "priceUsd": 21.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Saddle_2.jpg?v=1779523383",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Saddle_2.jpg?v=1779523383",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/fender-2.png?v=1779525833",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/rear_fender.png?v=1779527011"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-fender-1"
+  },
+  {
+    "handle": "surge-v-inner-tire",
+    "title": "Surge V Inner Tire",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 29.0,
+    "priceUsd": 29.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Innertire-Front_1.jpg?v=1779529633",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Innertire-Front_1.jpg?v=1779529633",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Innertire-Rear_1.jpg?v=1779529633"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-inner-tire"
+  },
+  {
+    "handle": "surge-v-handlebar",
+    "title": "Surge V Handlebar",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 49.0,
+    "priceUsd": 49.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Handlebar_2.jpg?v=1779523141",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Handlebar_2.jpg?v=1779523141",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Handlebar_1.jpg?v=1779523141"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-handlebar"
+  },
+  {
+    "handle": "surge-v-ambient-light-trim-cover",
+    "title": "Surge V Ambient Light Trim Cover",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 39.0,
+    "priceUsd": 39.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLightTrimCover_4sets_6.jpg?v=1779522960",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLightTrimCover_4sets_6.jpg?v=1779522960",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLightTrimCover_4sets_2.jpg?v=1779522960"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-ambient-light-trim-cover"
+  },
+  {
+    "handle": "headlight-cover",
+    "title": "Surge V Headlight Cover",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 15.0,
+    "priceUsd": 15.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Headlightcover_black_2.jpg?v=1779522663",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Headlightcover_black_2.jpg?v=1779522663",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Headlightcover_white_2.jpg?v=1779522663"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/headlight-cover"
+  },
+  {
+    "handle": "surge-v-frame-cover",
+    "title": "Surge V Frame Cover",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 26.0,
+    "priceUsd": 26.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/SurgeVFrameCover-2.png?v=1779522509",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/SurgeVFrameCover-2.png?v=1779522509",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/SurgeVFrameCover-1.png?v=1779522509"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-frame-cover"
+  },
+  {
+    "handle": "surge-v-end-cap",
+    "title": "Surge V End Cap",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 9.0,
+    "priceUsd": 9.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/endcap.png?v=1779363543",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/endcap.png?v=1779363543"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-end-cap"
+  },
+  {
+    "handle": "surge-v-outer-tire",
+    "title": "Surge V Off-road Outer Tire",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 139.0,
+    "priceUsd": 139.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Outertire-Rear_2.jpg?v=1779529441",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Outertire-Rear_2.jpg?v=1779529441",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Outertire-Front_2.jpg?v=1779529441"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-outer-tire"
+  },
+  {
+    "handle": "surge-v-rear-rack",
+    "title": "Surge V Rear Rack",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 199.0,
+    "priceUsd": 199.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearRackset_1.jpg?v=1779364846",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearRackset_1.jpg?v=1779364846",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/RearRackset_2.jpg?v=1779364846"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-rear-rack"
+  },
+  {
+    "handle": "surge-v-throttle",
+    "title": "Surge V Throttle",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 79.0,
+    "priceUsd": 79.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rightaccelerator_1.jpg?v=1779361455",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rightaccelerator_1.jpg?v=1779361455"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-throttle"
+  },
+  {
+    "handle": "surge-v-instrument-panel",
+    "title": "Surge V Instrument Panel",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 189.0,
+    "priceUsd": 189.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/InstrumentPanel_1.jpg?v=1779359484",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/InstrumentPanel_1.jpg?v=1779359484",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/InstrumentPanel_2.jpg?v=1779359484",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/InstrumentPanel_5.jpg?v=1779359484"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-instrument-panel"
+  },
+  {
+    "handle": "surge-v-97v-45ah-battery",
+    "title": "Surge V 97V 45Ah Battery",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 1899.0,
+    "priceUsd": 1899.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/battery-1.jpg?v=1775633462",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/battery-1.jpg?v=1775633462",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/battery-2.jpg?v=1775633462"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-97v-45ah-battery"
+  },
+  {
+    "handle": "surge-v-wheel-rim",
+    "title": "Surge V Wheel Rim",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 219.0,
+    "priceUsd": 219.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rim-Front.jpg?v=1779529909",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rim-Front.jpg?v=1779529909",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Rim-Rear_2.jpg?v=1779529909"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-wheel-rim"
+  },
+  {
+    "handle": "surge-v-chain",
+    "title": "Surge V Chain",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 69.0,
+    "priceUsd": 69.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chain_2.jpg?v=1779364649",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chain_2.jpg?v=1779364649",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chain_1.jpg?v=1779364650"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-chain"
+  },
+  {
+    "handle": "surge-v-saddle",
+    "title": "Surge V Saddle",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 79.0,
+    "priceUsd": 79.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Saddle_1.jpg?v=1779363647",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Saddle_1.jpg?v=1779363647"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-saddle"
+  },
+  {
+    "handle": "surge-v-charger",
+    "title": "Surge V Charger",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 299.0,
+    "priceUsd": 299.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chargingadapter_1.jpg?v=1779361856",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chargingadapter_1.jpg?v=1779361856",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Chargingadapter_2.jpg?v=1779361856"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-charger"
+  },
+  {
+    "handle": "surge-v-combination-switch",
+    "title": "Surge V Combination Switch",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 69.0,
+    "priceUsd": 69.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/CombinationSwitchAssembly_4.jpg?v=1779361708",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/CombinationSwitchAssembly_4.jpg?v=1779361708"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-combination-switch"
+  },
+  {
+    "handle": "surge-v-ambient-light",
+    "title": "Surge V Ambient Light",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 69.9,
+    "priceUsd": 69.9,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLight-Left_1.jpg?v=1779360103",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLight-Left_1.jpg?v=1779360103",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/AmbientLight-Right_1.jpg?v=1779360103"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-ambient-light"
+  },
+  {
+    "handle": "surge-v-horn",
+    "title": "Surge V Horn",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 8.9,
+    "priceUsd": 8.9,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Horn_1.jpg?v=1779359951",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Horn_1.jpg?v=1779359951",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/Horn_3.jpg?v=1779359951"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-horn"
+  },
+  {
+    "handle": "surge-v-motor",
+    "title": "Surge V Motor",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 999.0,
+    "priceUsd": 999.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/motor-1.jpg?v=1776764746",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/motor-1.jpg?v=1776764746",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/motor-2.jpg?v=1776764746"
+    ],
+    "description": "Technical Specifications\n\nMotor Type: LPMSM\nEncoder Type: Resolver\nPeak Power: 35kW\nRated Voltage: 97V",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-motor"
+  },
+  {
+    "handle": "surge-v-controller",
+    "title": "Surge V Controller",
+    "vendor": "Y-VOLT",
+    "type": "",
+    "priceEur": 899.0,
+    "priceUsd": 899.0,
+    "image": "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/controller-1.jpg?v=1776763979",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/controller-1.jpg?v=1776763979",
+      "https://cdn.shopify.com/s/files/1/0640/4463/0150/files/controller-2.jpg?v=1776763979"
+    ],
+    "description": "",
+    "available": true,
+    "sourceUrl": "https://www.yvolt.com/products/surge-v-controller"
+  }
+]
