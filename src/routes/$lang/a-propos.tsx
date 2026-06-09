@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/ContactForm";
 import { useI18n } from "@/i18n/I18nProvider";
 import { isLocale, type Locale } from "@/i18n/config";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
-import teamPhoto from "@/assets/about-team-79bike.jpeg.asset.json";
-import portraitPhoto from "@/assets/about-portrait.jpg.asset.json";
-import chinaBg from "@/assets/about-china-bg.jpg.asset.json";
+const teamPhoto = { url: "/assets/placeholder.svg" };
+const portraitPhoto = { url: "/assets/placeholder.svg" };
+const chinaBg = { url: "/assets/placeholder.svg" };
 
 const META: Record<Locale, { title: string; desc: string }> = {
   fr: {

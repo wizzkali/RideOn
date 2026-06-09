@@ -8,12 +8,12 @@ import { useI18n } from "@/i18n/I18nProvider";
 import { isLocale, type Locale } from "@/i18n/config";
 import { getDict } from "@/i18n/translations";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
-import leCuingMap from "@/assets/rando-le-cuing-map.png.asset.json";
-import barceloneMap from "@/assets/rando-barcelone-map.png.asset.json";
-import baqueiraMap from "@/assets/rando-baqueira-map.png.asset.json";
-import circuitPrive from "@/assets/circuit-prive.jpeg.asset.json";
-import leucateMap from "@/assets/rando-leucate-map.png.asset.json";
-import randonneesBanner from "@/assets/randonnees-banner.jpg.asset.json";
+const leCuingMap = { url: "/assets/placeholder.svg" };
+const barceloneMap = { url: "/assets/placeholder.svg" };
+const baqueiraMap = { url: "/assets/placeholder.svg" };
+const circuitPrive = { url: "/assets/placeholder.svg" };
+// leucateMap already imported above;
+const randonneesBanner = { url: "/assets/placeholder.svg" };
 
 export const Route = createFileRoute("/$lang/location")({
   head: ({ params }) => {

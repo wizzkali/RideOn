@@ -8,11 +8,11 @@ import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 import partsData from "@/data/parts.json";
 import fastaceData from "@/data/fastace.json";
 import yvoltData from "@/data/yvolt.json";
-import piecesBanner from "@/assets/piece-banner.jpg.asset.json";
-import piecesVideo from "@/assets/piece-banner.mp4.asset.json";
-import yvoltLogo from "@/assets/yvolt-logo-v2.png.asset.json";
-import bike79Logo from "@/assets/79bike-logo-v2.png.asset.json";
-import fastaceLogo from "@/assets/fastace-logo.png.asset.json";
+const piecesBanner = { url: "/assets/placeholder.svg" };
+const piecesVideo = { url: "/assets/placeholder.svg" };
+const yvoltLogo = { url: "/assets/placeholder.svg" };
+const bike79Logo = { url: "/assets/placeholder.svg" };
+const fastaceLogo = { url: "/assets/placeholder.svg" };
 
 interface Part {
   handle: string;

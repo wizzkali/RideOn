@@ -10,7 +10,7 @@ import { abs, hreflangLinks, ogUrlMeta, localBusinessLd, jsonLdScript, SITE_URL 
 import { faqLd } from "@/lib/seo";
 import { SHOWROOM_SEO } from "@/content/showroomSeo";
 import { ShowroomLongContent } from "@/components/ShowroomLongContent";
-import leucateMap from "@/assets/rando-leucate-map.png.asset.json";
+const leucateMap = { url: "/assets/placeholder.svg" };
 
 export const Route = createFileRoute("/$lang/leucate")({
   head: ({ params }) => {

@@ -6,8 +6,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { useI18n } from "@/i18n/I18nProvider";
 import { isLocale, type Locale } from "@/i18n/config";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
-import heroVideo from "@/assets/atelier-hero.mov.asset.json";
-import atelierHands from "@/assets/atelier-hands-v3.jpg.asset.json";
+const heroVideo = { url: "/assets/placeholder.svg" };
+const atelierHands = { url: "/assets/placeholder.svg" };
 
 const META: Record<Locale, { title: string; desc: string }> = {
   fr: {

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Youtube, Facebook, MessageCircle } from "lucide-react";
 import { useI18n } from "@/i18n/I18nProvider";
-import rideonLogo from "@/assets/rideon-logo.png.asset.json";
+const rideonLogo = { url: "/assets/rideon-logo.svg" };
 
 // TikTok n'est pas dans lucide — petit SVG inline
 function TikTokIcon({ className }: { className?: string }) {

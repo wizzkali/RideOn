@@ -12,7 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { organizationLd, jsonLdScript, DEFAULT_OG_IMAGE } from "@/lib/seo";
-import rideonLogo from "@/assets/rideon-logo.png.asset.json";
+const rideonLogo = { url: "/assets/rideon-logo.svg" };
 
 function NotFoundComponent() {
   return (
