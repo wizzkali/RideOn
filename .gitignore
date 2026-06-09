@@ -5,3 +5,4 @@ dist
 .output
 .vinxi
 *.local
+.vercel
