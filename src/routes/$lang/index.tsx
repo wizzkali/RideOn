@@ -11,7 +11,7 @@ import { getDict } from "@/i18n/translations";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 import yvoltData from "@/data/yvolt.json";
 const heroVideo = { url: "/assets/placeholder.svg" };
-import falconL1ebCutout from "@/assets/falcon-pro-l1eb-cutout.png";
+const falconL1ebCutout = "/assets/placeholder.svg";
 
 export const Route = createFileRoute("/$lang/")({
   head: ({ params }) => {

@@ -1,13 +1,8 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
+@source "../src";
 
 @custom-variant dark (&:is(.dark *));
-
-/*
- * Ride On Distribution — design system
- * Dark zinc base + brand cyan accent. Space Grotesk display, Inter body.
- */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -93,28 +88,21 @@
   --sidebar-primary: oklch(0.78 0.14 215);
   --sidebar-primary-foreground: oklch(0.145 0.005 285);
   --sidebar-accent: oklch(0.22 0.005 285);
-  --sidebar-accent-foreground: oklch(0.92 0.005 285);
+  --sidebar-foreground: oklch(0.92 0.005 285);
   --sidebar-border: oklch(1 0 0 / 8%);
   --sidebar-ring: oklch(0.78 0.14 215);
-}
-
-.dark {
-  --background: oklch(0.145 0.005 285);
-  --foreground: oklch(0.92 0.005 285);
 }
 
 @layer base {
   * {
     border-color: var(--color-border);
   }
-
   html, body {
     background-color: var(--color-zinc-950);
     color: var(--color-zinc-200);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
-
   ::selection {
     background-color: color-mix(in oklab, var(--color-brand-cyan) 30%, transparent);
     color: white;
