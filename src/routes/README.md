@@ -1,4 +1,3 @@
-================================================================================
 # Routes
 
 TanStack Start uses **file-based routing**. Every `.tsx` file in this directory
@@ -22,4 +21,3 @@ is `src/routes/__root.tsx`.
 `routeTree.gen.ts` is auto-generated. Don't edit it by hand.
 
 
-================================================================================
