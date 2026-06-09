@@ -133,3 +133,4 @@ function B2BPage() {
     </SiteLayout>
   );
 }
+

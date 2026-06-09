@@ -574,3 +574,4 @@ export const SHOWROOM_SEO: Record<ShowroomKey, Record<Locale, ShowroomSEO>> = {
   lecuing:   { fr: lecuingFR,   en: lecuingEN,   es: lecuingES },
   leucate:   { fr: leucateFR,   en: leucateEN,   es: leucateES },
 };
+

@@ -587,3 +587,4 @@ export type Dict = (typeof translations)["fr"];
 export function getDict(locale: Locale): Dict {
   return translations[locale] as Dict;
 }
+

@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { CartDrawer } from "./CartDrawer";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useI18n } from "@/i18n/I18nProvider";
-const rideonLogo = { url: "/assets/rideon-logo.svg" };
+import rideonLogo from "@/assets/rideon-logo.png.asset.json";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -93,3 +93,4 @@ export function Header() {
     </nav>
   );
 }
+

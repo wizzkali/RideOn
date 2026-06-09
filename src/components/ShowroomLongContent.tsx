@@ -140,3 +140,4 @@ export function ShowroomLongContent({ data }: { data: ShowroomSEO }) {
     </div>
   );
 }
+

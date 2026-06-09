@@ -119,3 +119,4 @@ export function formatPrice(amount: string | number, currency = "EUR", locale = 
   const n = typeof amount === "string" ? parseFloat(amount) : amount;
   return new Intl.NumberFormat(locale, { style: "currency", currency, maximumFractionDigits: 0 }).format(n);
 }
+

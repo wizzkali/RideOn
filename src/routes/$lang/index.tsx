@@ -10,8 +10,8 @@ import { SHOPIFY_LANG, SHOPIFY_COUNTRY, isLocale, type Locale } from "@/i18n/con
 import { getDict } from "@/i18n/translations";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 import yvoltData from "@/data/yvolt.json";
-const heroVideo = { url: "/assets/placeholder.svg" };
-const falconL1ebCutout = "/assets/placeholder.svg";
+import heroVideo from "@/assets/logo79bikey-volt.mp4.asset.json";
+import falconL1ebCutout from "@/assets/falcon-pro-l1eb-cutout.png";
 
 export const Route = createFileRoute("/$lang/")({
   head: ({ params }) => {
@@ -293,3 +293,4 @@ function HomePage() {
     </SiteLayout>
   );
 }
+

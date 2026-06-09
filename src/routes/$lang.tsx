@@ -17,3 +17,4 @@ function LangLayout() {
     </I18nProvider>
   );
 }
+

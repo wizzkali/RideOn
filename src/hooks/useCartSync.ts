@@ -12,3 +12,4 @@ export function useCartSync() {
     return () => document.removeEventListener("visibilitychange", onVisibility);
   }, [syncCart]);
 }
+

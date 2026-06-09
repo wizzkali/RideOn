@@ -24,3 +24,4 @@ function ShopifyCartRedirect() {
     </main>
   );
 }
+

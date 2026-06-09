@@ -256,3 +256,4 @@ function ProductPage() {
     </SiteLayout>
   );
 }
+

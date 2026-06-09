@@ -14,7 +14,7 @@ export const SITE_URL = "https://www.rideondistribution.com";
 export const abs = (path: string) => `${SITE_URL}${path}`;
 
 /** Default Open Graph share image (absolute URL, 1216x640). */
-const ogImageAsset = { url: "/assets/placeholder.svg" };
+import ogImageAsset from "@/assets/og-image.jpg.asset.json";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}${ogImageAsset.url}`;
 
 /** Build the full hreflang+canonical link set for a localized path. */
@@ -207,3 +207,4 @@ export const jsonLdScript = (data: unknown) => ({
   type: "application/ld+json" as const,
   children: JSON.stringify(data),
 });
+

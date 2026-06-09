@@ -55,3 +55,4 @@ export const LOCALE_FORMAT: Record<Locale, string> = {
   en: "en-GB",
   es: "es-ES",
 };
+

@@ -15,3 +15,4 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     </div>
   );
 }
+

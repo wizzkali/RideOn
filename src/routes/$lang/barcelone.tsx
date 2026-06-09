@@ -9,8 +9,8 @@ import { abs, hreflangLinks, ogUrlMeta, localBusinessLd, jsonLdScript, SITE_URL 
 import { faqLd } from "@/lib/seo";
 import { SHOWROOM_SEO } from "@/content/showroomSeo";
 import { ShowroomLongContent } from "@/components/ShowroomLongContent";
-const barcelonaHero = { url: "/assets/placeholder.svg" };
-const barcelonaBg = { url: "/assets/placeholder.svg" };
+import barcelonaHero from "@/assets/barcelona-hero.jpg.asset.json";
+import barcelonaBg from "@/assets/barcelona-bg.jpg.asset.json";
 
 export const Route = createFileRoute("/$lang/barcelone")({
   head: ({ params }) => {
@@ -149,3 +149,4 @@ function BarcelonePage() {
     </SiteLayout>
   );
 }
+

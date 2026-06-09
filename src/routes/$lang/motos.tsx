@@ -9,7 +9,7 @@ import { SHOPIFY_LANG, SHOPIFY_COUNTRY, isLocale, type Locale } from "@/i18n/con
 import { getDict } from "@/i18n/translations";
 import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 import yvoltData from "@/data/yvolt.json";
-const motosVideo = { url: "/assets/placeholder.svg" };
+import motosVideo from "@/assets/video-y-volt-motos.mp4.asset.json";
 
 export const Route = createFileRoute("/$lang/motos")({
   head: ({ params }) => {
@@ -123,3 +123,4 @@ function MotosPage() {
     </SiteLayout>
   );
 }
+

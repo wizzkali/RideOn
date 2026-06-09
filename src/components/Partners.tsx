@@ -1,7 +1,7 @@
-const yvolt = { url: "/assets/placeholder.svg" };
-const rideon = { url: "/assets/rideon-logo.svg" };
-const bike79 = { url: "/assets/placeholder.svg" };
-const fastace = { url: "/assets/placeholder.svg" };
+import yvolt from "@/assets/yvolt-logo-v2.png.asset.json";
+import rideon from "@/assets/rideon-distribution-logo.png.asset.json";
+import bike79 from "@/assets/79bike-logo-v2.png.asset.json";
+import fastace from "@/assets/fastace-logo.png.asset.json";
 
 const partners = [
   { name: "Y-VOLT", url: yvolt.url, className: "h-16 md:h-20" },
@@ -39,3 +39,5 @@ export function Partners({ title = "Nos partenaires", subtitle }: { title?: stri
     </section>
   );
 }
+
+

@@ -75,3 +75,4 @@ export function ProductCard({ product, featured = false }: { product: ShopifyPro
     </Link>
   );
 }
+

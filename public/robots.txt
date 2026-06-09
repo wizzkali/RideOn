@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /lovable/
-
-Sitemap: https://www.rideondistribution.com/sitemap.xml
