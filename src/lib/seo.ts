@@ -31,7 +31,7 @@ export function hreflangLinks(pathWithoutLang: string, locale: Locale) {
       hrefLang: l,
       href: abs(`/${l}${norm}`),
     })),
-    { rel: "alternate" as const, hrefLang: "x-default", href: abs(`/fr${norm}`) },
+    { rel: "alternate" as const, hrefLang: "x-default", href: abs(`/es${norm}`) },
   ];
 }
 

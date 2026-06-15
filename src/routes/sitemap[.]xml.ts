@@ -50,7 +50,7 @@ export const Route = createFileRoute("/sitemap.xml")({
                 `  <url>`,
                 `    <loc>${loc}</loc>`,
                 alternates,
-                `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/fr${e.path}"/>`,
+                `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/es${e.path}"/>`,
                 e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
                 e.priority ? `    <priority>${e.priority}</priority>` : null,
                 `  </url>`,
