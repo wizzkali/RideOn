@@ -11,15 +11,50 @@ import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 import yvoltData from "@/data/yvolt.json";
 import motosVideo from "@/assets/video-y-volt-motos.mp4.asset.json";
 
+const COPY = {
+  fr: {
+    metaTitle: "Motos électriques 79Bike · Ride On Distribution",
+    metaDesc: "Toutes les motos électriques 79Bike disponibles à la vente : Falcon GT, Falcon Pro L1EB, Falcon Pro Off Road.",
+    heroLead: "Toutes nos",
+    heroAccent: "motos électriques",
+    subtitle: "La gamme complète 79Bike disponible chez Ride On Distribution. Homologuées route ou off-road.",
+    yvoltText: "Nouvelle marque de motos électriques dirt et supermoto, disponible en pièces et en configuration complète.",
+    unavailable: "Indisponible",
+    noProducts: "Aucun produit trouvé",
+  },
+  en: {
+    metaTitle: "79Bike electric motorcycles · Ride On Distribution",
+    metaDesc: "All 79Bike electric motorcycles for sale: Falcon GT, Falcon Pro L1EB, Falcon Pro Off Road.",
+    heroLead: "All our",
+    heroAccent: "electric motorcycles",
+    subtitle: "The full 79Bike range available at Ride On Distribution. Road-homologated or off-road.",
+    yvoltText: "New brand of dirt and supermoto electric bikes, available as parts or fully built.",
+    unavailable: "Unavailable",
+    noProducts: "No products found",
+  },
+  es: {
+    metaTitle: "Motos eléctricas 79Bike · Ride On Distribution",
+    metaDesc: "Todas las motos eléctricas 79Bike a la venta: Falcon GT, Falcon Pro L1EB, Falcon Pro Off Road.",
+    heroLead: "Todas nuestras",
+    heroAccent: "motos eléctricas",
+    subtitle: "La gama completa 79Bike disponible en Ride On Distribution. Homologadas para carretera u off-road.",
+    yvoltText: "Nueva marca de motos eléctricas dirt y supermoto, disponible en piezas y en configuración completa.",
+    unavailable: "No disponible",
+    noProducts: "No se encontraron productos.",
+  },
+};
+
 export const Route = createFileRoute("/$lang/motos")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
+    const m = COPY[l];
     return {
       meta: [
-        { title: `${d.nav.motos} · Ride On Distribution` },
-        { name: "description", content: "Toutes les motos électriques 79Bike disponibles à la vente : Falcon GT, Falcon Pro L1EB, Falcon Pro Off Road." },
-        { property: "og:title", content: `${d.nav.motos} · Ride On Distribution` },
+        { title: m.metaTitle },
+        { name: "description", content: m.metaDesc },
+        { property: "og:title", content: m.metaTitle },
+        { property: "og:description", content: m.metaDesc },
         ...ogUrlMeta("/motos", l),
       ],
       links: hreflangLinks("/motos", l),
@@ -30,13 +65,14 @@ export const Route = createFileRoute("/$lang/motos")({
 
 function MotosPage() {
   const { locale, t } = useI18n();
+  const c = COPY[locale];
   const { data: products = [], isLoading } = useQuery({
     queryKey: ["products", "motos", locale],
     queryFn: () =>
       fetchProducts(50, "product_type:\"moto-electrique\" OR product_type:\"E-Bike\"", { language: SHOPIFY_LANG[locale], country: SHOPIFY_COUNTRY[locale] }),
   });
 
-  // Falcon Pro L1EB en premier dans le catalogue 79Bike
+  // Falcon Pro L1EB primero en el catálogo 79Bike
   const isFalconL1eb = (p: typeof products[0]) =>
     /l1eb|homologu/i.test(p.node.title) || /l1eb|homologu/i.test(p.node.handle);
   const sortedProducts = [...products].sort((a, b) => {
@@ -50,15 +86,15 @@ function MotosPage() {
       <VideoHero
         src={motosVideo.url}
         eyebrow={t.nav.motos}
-        title={<>Toutes nos <span className="text-brand-cyan">motos électriques</span></>}
-        subtitle="La gamme complète 79Bike disponible chez Ride On Distribution. Homologuées route ou off-road."
+        title={<>{c.heroLead} <span className="text-brand-cyan">{c.heroAccent}</span></>}
+        subtitle={c.subtitle}
       />
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-12">
             <h2 className="font-display text-3xl font-medium text-white mb-3">Y‑VOLT</h2>
-            <p className="text-zinc-400 max-w-xl">Nouvelle marque de motos électriques dirt et supermoto, disponible en pièces et en configuration complète.</p>
+            <p className="text-zinc-400 max-w-xl">{c.yvoltText}</p>
             <div className="h-1 w-20 bg-brand-cyan mt-4" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -88,10 +124,10 @@ function MotosPage() {
                   <p className="text-[11px] uppercase tracking-widest text-zinc-500 mb-4">{p.vendor}</p>
                   <div className="mt-auto flex items-end justify-between gap-3">
                     <span className="text-brand-cyan font-display text-lg whitespace-nowrap">
-                      {new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(p.priceEur)}
+                      {new Intl.NumberFormat(locale === "es" ? "es-ES" : locale === "en" ? "en-GB" : "fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(p.priceEur)}
                     </span>
                     {!p.available && (
-                      <span className="text-[10px] uppercase tracking-widest text-zinc-500">Indisponible</span>
+                      <span className="text-[10px] uppercase tracking-widest text-zinc-500">{c.unavailable}</span>
                     )}
                   </div>
                 </div>
@@ -110,7 +146,7 @@ function MotosPage() {
               ))}
             </div>
           ) : sortedProducts.length === 0 ? (
-            <p className="text-zinc-500 text-center py-24">No products found</p>
+            <p className="text-zinc-500 text-center py-24">{c.noProducts}</p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {sortedProducts.map((p) => (
@@ -123,4 +159,3 @@ function MotosPage() {
     </SiteLayout>
   );
 }
-

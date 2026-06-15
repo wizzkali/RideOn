@@ -429,8 +429,8 @@ export const translations = {
         "Alquila tu Falcon y únete a nuestras rutas guiadas exclusivas. Cruza los parques naturales donde los motores de combustión están prohibidos.",
       pyrBullets: ["Salida desde el showroom de Toulouse o Barcelona", "Guía experto 79Bike", "Equipamiento premium incluido"],
       pyrBadge: ["Silencio total.", "Naturaleza pura."],
-      showroomTls: "Sede Francia & Showroom Principal",
-      showroomBcn: "Distribución España (próximamente)",
+      showroomTls: "Sede en Francia · Showroom principal",
+      showroomBcn: "Distribución en España (próximamente)",
       flagship: "Flagship",
     },
     pieces: {
