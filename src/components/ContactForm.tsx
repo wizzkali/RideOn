@@ -91,7 +91,7 @@ export function ContactForm({
   requestTypes,
   defaultRequestType,
   whatsappPhone = "33698329029",
-  mailtoEmail = "contact@rideondistribution.com",
+  mailtoEmail = "contacto@rideondistribution.com",
   contextLabel,
   className = "py-20",
 }: ContactFormProps) {

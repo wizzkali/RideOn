@@ -79,7 +79,7 @@ function ToulousePage() {
           <div className="p-8 bg-zinc-900 rounded-2xl border border-zinc-800">
             <Phone className="size-6 text-brand-cyan mb-4" />
             <h3 className="font-display text-xl text-white mb-2">{s.contact}</h3>
-            <p className="text-zinc-400 text-sm leading-relaxed">contact@rideon-distribution.fr</p>
+            <p className="text-zinc-400 text-sm leading-relaxed">contacto@rideondistribution.com</p>
           </div>
           <a
             href="https://wa.me/33698329029"

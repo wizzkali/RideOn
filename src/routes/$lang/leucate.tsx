@@ -146,10 +146,10 @@ function LeucatePage() {
                 <MessageCircle className="size-4" /> {c.wa} · +33 6 98 32 90 29
               </a>
               <a
-                href="mailto:contact@rideon-distribution.fr"
+                href="mailto:contacto@rideondistribution.com"
                 className="inline-flex items-center gap-2 border border-zinc-700 text-white px-5 py-3 rounded-lg font-semibold hover:border-brand-cyan/50 transition"
               >
-                <Mail className="size-4 text-brand-cyan" /> contact@rideon-distribution.fr
+                <Mail className="size-4 text-brand-cyan" /> contacto@rideondistribution.com
               </a>
             </div>
           </div>
