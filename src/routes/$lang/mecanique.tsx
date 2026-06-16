@@ -12,11 +12,11 @@ import atelierHands from "@/assets/atelier-hands-v3.jpg.asset.json";
 const META: Record<Locale, { title: string; desc: string }> = {
   fr: {
     title: "Atelier mécanique — Ride On Distribution",
-    desc: "Notre atelier mécanique : entretien, réparation, préparation et tuning pour motos électriques 79Bike. Barcelonne et Saint-Gaudens.",
+    desc: "Notre atelier mécanique : entretien, réparation, préparation et tuning pour motos électriques 79Bike. Barcelone et Saint-Gaudens.",
   },
   en: {
     title: "Workshop — Ride On Distribution",
-    desc: "Our mechanical workshop: service, repair, prep and tuning for 79Bike electric motorcycles. Barcelonne and Saint-Gaudens.",
+    desc: "Our mechanical workshop: service, repair, prep and tuning for 79Bike electric motorcycles. Barcelona and Saint-Gaudens.",
   },
   es: {
     title: "Taller mecánico — Ride On Distribution",
@@ -38,13 +38,14 @@ const CONTENT: Record<Locale, {
   ctaTitle: string;
   ctaText: string;
   ctaButton: string;
+  imgAlt: string;
 }> = {
   fr: {
     eyebrow: "Atelier officiel",
     title: "Atelier",
     titleAccent: "mécanique.",
     subtitle:
-      "Entretien, réparation, préparation. Notre atelier à Barcelonne et Saint-Gaudens prend en charge votre moto électrique, du contrôle annuel au montage de pièces performance.",
+      "Entretien, réparation, préparation. Notre atelier à Barcelone et Saint-Gaudens prend en charge votre moto électrique, du contrôle annuel au montage de pièces performance.",
     servicesHead: "L'expertise atelier,",
     servicesHeadMuted: "au service de votre machine.",
     servicesTitle: "Nos prestations",
@@ -66,13 +67,14 @@ const CONTENT: Record<Locale, {
     ctaTitle: "Besoin d'un rendez-vous atelier ?",
     ctaText: "Décrivez votre demande, on revient vers vous sous 24h.",
     ctaButton: "Contacter l'atelier",
+    imgAlt: "Mécanicien 79Bike au travail sur une moto électrique",
   },
   en: {
     eyebrow: "Official workshop",
     title: "Mechanical",
     titleAccent: "workshop.",
     subtitle:
-      "Service, repair, prep. Our Barcelonne and Saint-Gaudens workshop handles your electric bike, from annual checkup to performance parts install.",
+      "Service, repair, prep. Our Barcelona and Saint-Gaudens workshop handles your electric bike, from annual checkup to performance parts install.",
     servicesHead: "Workshop expertise,",
     servicesHeadMuted: "at the service of your machine.",
     servicesTitle: "Services",
@@ -94,6 +96,7 @@ const CONTENT: Record<Locale, {
     ctaTitle: "Need a workshop appointment?",
     ctaText: "Describe your request — we reply within 24h.",
     ctaButton: "Contact the workshop",
+    imgAlt: "79Bike mechanic working on an electric motorcycle",
   },
   es: {
     eyebrow: "Taller oficial",
@@ -122,6 +125,7 @@ const CONTENT: Record<Locale, {
     ctaTitle: "¿Necesitas cita en el taller?",
     ctaText: "Cuéntanos tu solicitud, respondemos en 24h.",
     ctaButton: "Contactar el taller",
+    imgAlt: "Mecánico 79Bike trabajando en una moto eléctrica",
   },
 };
 
@@ -159,7 +163,7 @@ function MecaniquePage() {
       <div className="relative border-b border-zinc-900 overflow-hidden">
         <img
           src={atelierHands.url}
-          alt="Mécanicien 79Bike au travail sur un vélo électrique"
+          alt={c.imgAlt}
           loading="lazy"
           width={1920}
           height={1080}
