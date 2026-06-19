@@ -24,7 +24,7 @@ const META = {
 
 export const Route = createFileRoute("/$lang/hazte-distribuidor")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const m = META[l];
     return {
       meta: [

@@ -131,7 +131,7 @@ const CONTENT: Record<Locale, {
 
 export const Route = createFileRoute("/$lang/mecanique")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const m = META[l];
     return {
       meta: [
@@ -238,7 +238,7 @@ function MecaniquePage() {
       <ContactForm
         title={c.ctaTitle}
         subtitle={c.ctaText}
-        contextLabel="Mécanique"
+        contextLabel="Taller"
         requestTypes={c.services.map((s) => s.title)}
       />
     </SiteLayout>

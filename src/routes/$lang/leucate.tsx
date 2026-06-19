@@ -14,7 +14,7 @@ import leucateMap from "@/assets/rando-leucate-map.png.asset.json";
 
 export const Route = createFileRoute("/$lang/leucate")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     const seo = SHOWROOM_SEO.leucate[l];
     return {
@@ -121,7 +121,7 @@ function LeucatePage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div className="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950">
-            <img src={leucateMap.url} alt="Carte du spot de Leucate" className="w-full h-full object-cover" />
+            <img src={leucateMap.url} alt="Mapa del spot de Leucate" className="w-full h-full object-cover" />
           </div>
           <div className="grid grid-cols-1 gap-5">
             <div className="p-7 rounded-2xl border border-zinc-800 bg-zinc-900">

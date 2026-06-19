@@ -17,7 +17,7 @@ import randonneesBanner from "@/assets/randonnees-banner.jpg.asset.json";
 
 export const Route = createFileRoute("/$lang/location")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     return {
       meta: [
@@ -81,7 +81,7 @@ function LocationPage() {
                   <div className="relative aspect-[4/3] overflow-hidden bg-zinc-950">
                     <img
                       src={zoneImages[i]}
-                      alt={`Carte de la zone ${z.name}`}
+                      alt={`Mapa de la zona ${z.name}`}
                       loading="lazy"
                       className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -96,11 +96,11 @@ function LocationPage() {
                     <p className="text-sm text-zinc-400">{z.text}</p>
                     {z.rides && z.rides.length > 0 && (
                       <p className="mt-3 text-[11px] uppercase tracking-widest text-zinc-500">
-                        {z.rides.length} {z.rides.length > 1 ? "itinéraires" : "itinéraire"}
+                        {z.rides.length} {z.rides.length > 1 ? "rutas" : "ruta"}
                       </p>
                     )}
                     <span className="mt-4 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-brand-cyan">
-                      <MapPin className="size-3.5" /> Voir sur la carte
+                      <MapPin className="size-3.5" /> Ver en el mapa
                     </span>
                   </div>
                 </button>
@@ -188,7 +188,7 @@ function LocationPage() {
           </div>
         </div>
       </section>
-      <ContactForm contextLabel="Location" />
+      <ContactForm contextLabel="Alquiler" />
 
       <Dialog open={!!reserveTour} onOpenChange={(o) => !o && setReserveTour(null)}>
         <DialogContent className="max-w-2xl bg-zinc-950 border-zinc-800 text-white max-h-[90vh] overflow-y-auto">
@@ -200,7 +200,7 @@ function LocationPage() {
           {reserveTour && (
             <ContactForm
               className="py-2"
-              contextLabel={`Randonnée — ${reserveTour.title} (${reserveTour.duration}, ${reserveTour.level}, ${reserveTour.price})`}
+              contextLabel={`Ruta — ${reserveTour.title} (${reserveTour.duration}, ${reserveTour.level}, ${reserveTour.price})`}
               defaultRequestType={reserveTour.title}
               requestTypes={t.location.tours.map((tt) => tt.title)}
               title=" "
@@ -223,7 +223,7 @@ function LocationPage() {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-0">
               <div className="md:col-span-3 aspect-video md:aspect-auto md:min-h-[420px]">
                 <iframe
-                  title={`Carte ${mapZone.name}`}
+                  title={`Mapa ${mapZone.name}`}
                   src={`https://www.google.com/maps?q=${encodeURIComponent(`${mapZone.name}, ${mapZone.region}`)}&output=embed`}
                   className="w-full h-full border-0"
                   loading="lazy"

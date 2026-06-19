@@ -9,7 +9,7 @@ import { hreflangLinks, ogUrlMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/$lang/sav")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     return {
       meta: [

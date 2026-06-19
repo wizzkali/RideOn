@@ -121,7 +121,7 @@ const CONTENT: Record<Locale, {
 
 export const Route = createFileRoute("/$lang/a-propos")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const m = META[l];
     return {
       meta: [
@@ -197,7 +197,7 @@ function AboutPage() {
 
           <div className="max-w-6xl mx-auto px-6 pt-4 pb-24 grid md:grid-cols-2 gap-10 items-center">
             <div className="rounded-2xl overflow-hidden border border-zinc-800">
-              <img src={teamPhoto.url} alt="Valentin & Miguel à l'usine 79Bike en Chine" className="w-full h-full object-cover" />
+              <img src={teamPhoto.url} alt="Valentin y Miguel en la fábrica 79Bike en China" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="size-14 rounded-2xl bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center mb-6">
@@ -245,7 +245,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <ContactForm contextLabel="À propos" />
+      <ContactForm contextLabel="Quiénes somos" />
     </SiteLayout>
   );
 }

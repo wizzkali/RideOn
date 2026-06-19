@@ -12,7 +12,7 @@ import { ShowroomLongContent } from "@/components/ShowroomLongContent";
 
 export const Route = createFileRoute("/$lang/toulouse")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     const seo = SHOWROOM_SEO.lecuing[l];
     return {
@@ -92,7 +92,7 @@ function ToulousePage() {
             </div>
             <h3 className="font-display text-xl text-white mb-2">WhatsApp France</h3>
             <p className="text-zinc-200 text-sm font-semibold">+33 6 98 32 90 29</p>
-            <p className="text-zinc-500 text-xs mt-1">Cliquez pour discuter</p>
+            <p className="text-zinc-500 text-xs mt-1">Haz clic para hablar</p>
           </a>
         </div>
       </section>

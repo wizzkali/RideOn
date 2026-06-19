@@ -14,7 +14,7 @@ import barcelonaBg from "@/assets/barcelona-bg.jpg.asset.json";
 
 export const Route = createFileRoute("/$lang/barcelone")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     const seo = SHOWROOM_SEO.barcelona[l];
     return {

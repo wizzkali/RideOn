@@ -10,12 +10,12 @@ const partners = [
   { name: "RideOn Distribution", url: rideon.url, className: "h-20 md:h-24" },
 ];
 
-export function Partners({ title = "Nos partenaires", subtitle }: { title?: string; subtitle?: string }) {
+export function Partners({ title = "Nuestros socios", subtitle }: { title?: string; subtitle?: string }) {
   return (
     <section className="py-24 bg-gradient-to-b from-zinc-950 via-zinc-900/40 to-zinc-950 border-y border-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16 text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-brand-cyan mb-3">Partenaires officiels</p>
+          <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-brand-cyan mb-3">Socios oficiales</p>
           <h2 className="font-display text-3xl md:text-4xl font-medium text-white">{title}</h2>
           {subtitle && <p className="text-zinc-500 mt-3 text-sm max-w-xl mx-auto">{subtitle}</p>}
         </div>
@@ -39,5 +39,3 @@ export function Partners({ title = "Nos partenaires", subtitle }: { title?: stri
     </section>
   );
 }
-
-
