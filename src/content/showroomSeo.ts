@@ -87,7 +87,7 @@ const barcelonaFR: ShowroomSEO = {
   faq: [
     {
       q: "Où se trouve exactement le showroom 79Bike à Barcelone ?",
-      a: "Notre showroom ouvre prochainement à Barcelone. En attendant l'inauguration, nous recevons sur rendez-vous et organisons des essais à domicile dans toute l'aire métropolitaine. Contactez-nous au +34 698 39 12 14 (WhatsApp) ou à barcelona@rideon-distribution.fr pour fixer une démonstration.",
+      a: "Notre showroom ouvre prochainement à Barcelone. En attendant l'inauguration, nous recevons sur rendez-vous et organisons des essais à domicile dans toute l'aire métropolitaine. Contactez-nous au +34 698 39 12 14 (WhatsApp) ou à contacto@rideondistribution.com pour fixer une démonstration.",
     },
     {
       q: "Les motos 79Bike sont-elles homologuées en Espagne (DGT) ?",
@@ -123,7 +123,7 @@ const barcelonaFR: ShowroomSEO = {
     },
     {
       q: "Peut-on louer une 79Bike pour quelques jours à Barcelone ?",
-      a: "Oui. Nous proposons la location à la journée (à partir de 39 €/jour), à la semaine (tarif dégressif) et au mois pour les digital nomads et expatriés. Réservation sur barcelona@rideon-distribution.fr ou WhatsApp +34 698 39 12 14.",
+      a: "Oui. Nous proposons la location à la journée (à partir de 39 €/jour), à la semaine (tarif dégressif) et au mois pour les digital nomads et expatriés. Réservation sur contacto@rideondistribution.com ou WhatsApp +34 698 39 12 14.",
     },
   ],
 };
@@ -174,7 +174,7 @@ const barcelonaES: ShowroomSEO = {
   faqTitle: "Preguntas frecuentes — Showroom Barcelona",
   faqIntro: "Todo lo que necesitas saber antes de comprar o alquilar una moto eléctrica 79Bike en Barcelona.",
   faq: [
-    { q: "¿Dónde se encuentra el showroom 79Bike en Barcelona?", a: "Nuestro showroom abre próximamente en Barcelona. Mientras tanto, atendemos con cita previa y organizamos pruebas a domicilio en toda el área metropolitana. Contáctanos al +34 698 39 12 14 (WhatsApp) o en barcelona@rideon-distribution.fr." },
+    { q: "¿Dónde se encuentra el showroom 79Bike en Barcelona?", a: "Nuestro showroom abre próximamente en Barcelona. Mientras tanto, atendemos con cita previa y organizamos pruebas a domicilio en toda el área metropolitana. Contáctanos al +34 698 39 12 14 (WhatsApp) o en contacto@rideondistribution.com." },
     { q: "¿Están las motos 79Bike homologadas en España (DGT)?", a: "Sí, al 100 %. Todas las Falcon están homologadas CE y matriculables ante la DGT española. Se entregan con permiso de circulación, ficha técnica, matrícula definitiva y etiqueta ambiental CERO emisiones." },
     { q: "¿Puedo circular por la ZBE de Barcelona con una 79Bike?", a: "Sí, sin ninguna restricción. La etiqueta CERO emisiones da acceso permanente a la ZBE Rondes de Barcelona, 24/7, incluso durante episodios de contaminación." },
     { q: "¿Qué carnet necesito para conducir una Falcon en España?", a: "Falcon GT: carnet AM (15 años) o B (residentes). Falcon Pro: carnet A1 (16 años). Falcon GT PRO: carnet A2 (18 años). Te orientamos hacia autoescuelas asociadas si lo necesitas." },
@@ -183,7 +183,7 @@ const barcelonaES: ShowroomSEO = {
     { q: "¿Puedo beneficiarme del Plan MOVES III?", a: "Sí, bajo condiciones de residencia en España y según comunidad autónoma. El Plan MOVES III puede cubrir hasta 1 100 € para una moto eléctrica L3e nueva. Tramitamos el expediente por ti." },
     { q: "¿Qué garantía incluye la moto?", a: "Garantía de fábrica 79Bike de 2 años sobre la moto y 2 años / 30 000 km sobre la batería. El SAT se realiza directamente en Barcelona, sin envíos al extranjero." },
     { q: "¿Aceptáis la recompra de mi scooter actual?", a: "Sí, recompramos tu scooter o moto (térmica o eléctrica) en 48h tras inspección. El valor se descuenta directamente del precio de tu Falcon nueva." },
-    { q: "¿Se puede alquilar una 79Bike unos días en Barcelona?", a: "Sí. Alquiler por día (desde 39 €/día), semana (tarifa decreciente) y mes para nómadas digitales y expatriados. Reserva en barcelona@rideon-distribution.fr o WhatsApp +34 698 39 12 14." },
+    { q: "¿Se puede alquilar una 79Bike unos días en Barcelona?", a: "Sí. Alquiler por día (desde 39 €/día), semana (tarifa decreciente) y mes para nómadas digitales y expatriados. Reserva en contacto@rideondistribution.com o WhatsApp +34 698 39 12 14." },
   ],
 };
 
@@ -233,7 +233,7 @@ const barcelonaEN: ShowroomSEO = {
   faqTitle: "Frequently asked questions — Barcelona",
   faqIntro: "Everything you need to know before buying or renting a 79Bike electric motorcycle in Barcelona.",
   faq: [
-    { q: "Where is the 79Bike Barcelona showroom?", a: "Our showroom is opening soon. In the meantime we welcome you by appointment and run home test rides across the metropolitan area. Contact +34 698 39 12 14 (WhatsApp) or barcelona@rideon-distribution.fr." },
+    { q: "Where is the 79Bike Barcelona showroom?", a: "Our showroom is opening soon. In the meantime we welcome you by appointment and run home test rides across the metropolitan area. Contact +34 698 39 12 14 (WhatsApp) or contacto@rideondistribution.com." },
     { q: "Are 79Bike motorcycles homologated in Spain (DGT)?", a: "Yes, 100%. The entire Falcon range is CE-homologated and DGT-registrable, delivered with registration, plate and CERO emissions sticker." },
     { q: "Can I ride in the Barcelona Low Emission Zone (ZBE)?", a: "Yes, with no restrictions. The CERO sticker grants 24/7 access to the ZBE Rondes de Barcelona, including during pollution alerts." },
     { q: "What licence do I need in Spain?", a: "Falcon GT: AM (15+) or B for Spanish residents. Falcon Pro: A1 (16+). Falcon GT PRO: A2 (18+)." },
@@ -242,7 +242,7 @@ const barcelonaEN: ShowroomSEO = {
     { q: "Am I eligible for Plan MOVES III?", a: "Yes, subject to Spanish residency and autonomous community rules. Up to €1,100 for a new L3e electric motorcycle. We handle the application." },
     { q: "What warranty is included?", a: "2-year manufacturer warranty on the bike, 2 years / 30,000 km on the battery. Service is handled locally in Barcelona — no shipping abroad." },
     { q: "Do you accept trade-ins?", a: "Yes, we buy back your old motorcycle within 48h after inspection. The value is deducted directly from your new Falcon." },
-    { q: "Can I rent a 79Bike for a few days?", a: "Yes. Daily (from €39/day), weekly (degressive rate) or monthly for digital nomads and expats. Book at barcelona@rideon-distribution.fr or WhatsApp +34 698 39 12 14." },
+    { q: "Can I rent a 79Bike for a few days?", a: "Yes. Daily (from €39/day), weekly (degressive rate) or monthly for digital nomads and expats. Book at contacto@rideondistribution.com or WhatsApp +34 698 39 12 14." },
   ],
 };
 
@@ -466,7 +466,7 @@ const leucateFR: ShowroomSEO = {
     { q: "Quelle est la meilleure saison pour rouler ici ?", a: "Toute l'année. Le printemps et l'automne sont les plus agréables, l'été reste idéal le matin et en fin de journée." },
     { q: "Y a-t-il un âge minimum ?", a: "Oui : 14 ans avec permis AM pour la Falcon GT, 16 ans pour la Falcon Pro, 18 ans pour la GT PRO." },
     { q: "Peut-on venir en groupe ?", a: "Oui. Nous organisons des sorties séminaire, EVJF/EVG, anniversaires et incentives jusqu'à 8 motos en simultané." },
-    { q: "Comment réserver ?", a: "Par WhatsApp au +33 6 98 32 90 29, par email à contact@rideon-distribution.fr ou via le formulaire de cette page." },
+    { q: "Comment réserver ?", a: "Par WhatsApp au +33 6 98 32 90 29, par email à contacto@rideondistribution.com ou via le formulaire de cette page." },
     { q: "Que se passe-t-il s'il pleut ?", a: "Si la météo rend la sortie dangereuse, nous la reportons gratuitement à une date convenue ensemble." },
     { q: "L'assurance est-elle incluse ?", a: "Oui, toutes nos motos sont couvertes pendant l'essai ou la location. Une franchise peut s'appliquer en cas de chute." },
   ],
@@ -513,7 +513,7 @@ const leucateEN: ShowroomSEO = {
     { q: "Best season?", a: "Year-round. Spring and autumn are most pleasant; summer ideal early/late." },
     { q: "Minimum age?", a: "14 with AM (Falcon GT), 16 (Pro), 18 (GT PRO)." },
     { q: "Group rides?", a: "Yes, up to 8 bikes simultaneously." },
-    { q: "How to book?", a: "WhatsApp +33 6 98 32 90 29, email contact@rideon-distribution.fr or this page's form." },
+    { q: "How to book?", a: "WhatsApp +33 6 98 32 90 29, email contacto@rideondistribution.com or this page's form." },
     { q: "What if it rains?", a: "We reschedule free of charge." },
     { q: "Is insurance included?", a: "Yes. A deductible may apply if you drop the bike." },
   ],
@@ -560,7 +560,7 @@ const leucateES: ShowroomSEO = {
     { q: "¿Mejor temporada?", a: "Todo el año. Primavera y otoño son las más agradables." },
     { q: "¿Edad mínima?", a: "14 con AM (Falcon GT), 16 (Pro), 18 (GT PRO)." },
     { q: "¿Salidas en grupo?", a: "Sí, hasta 8 motos simultáneamente." },
-    { q: "¿Cómo reservar?", a: "WhatsApp +33 6 98 32 90 29, email contact@rideon-distribution.fr o formulario." },
+    { q: "¿Cómo reservar?", a: "WhatsApp +33 6 98 32 90 29, email contacto@rideondistribution.com o formulario." },
     { q: "¿Y si llueve?", a: "Aplazamos sin coste." },
     { q: "¿Seguro incluido?", a: "Sí. Puede aplicarse franquicia en caso de caída." },
   ],

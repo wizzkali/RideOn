@@ -18,8 +18,8 @@ function ShopifyCartRedirect() {
     <main className="min-h-screen grid place-items-center bg-background px-6 text-center">
       <div>
         <Loader2 className="mx-auto mb-4 size-6 animate-spin text-primary" />
-        <h1 className="text-xl font-semibold text-foreground">Redirection vers le paiement sécurisé</h1>
-        <p className="mt-2 text-sm text-muted-foreground">Ouverture du checkout Ride On Distribution…</p>
+        <h1 className="text-xl font-semibold text-foreground">Redirigiendo al pago seguro</h1>
+        <p className="mt-2 text-sm text-muted-foreground">Abriendo el pago de Ride On Distribution…</p>
       </div>
     </main>
   );

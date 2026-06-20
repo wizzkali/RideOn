@@ -15,7 +15,7 @@ import falconL1ebCutout from "@/assets/falcon-pro-l1eb-cutout.png";
 
 export const Route = createFileRoute("/$lang/")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     return {
       meta: [
@@ -31,24 +31,62 @@ export const Route = createFileRoute("/$lang/")({
   component: HomePage,
 });
 
+// Textos de la home que antes estaban hardcodeados en francés. Ahora por idioma.
+const COPY = {
+  fr: {
+    heroBadge: "Nouveau · Édition L1EB",
+    heroLead: "10 000 W · 410 Nm · 90 km d'autonomie. Notre moto électrique phare, homologuée route L1e‑B, prête à rouler.",
+    heroCtaFeatured: "Découvrir la Falcon Pro L1EB",
+    heroCtaAll: "Voir toutes les motos",
+    weight: "Poids",
+    yvoltText: "Nouvelle marque de motos électriques dirt et supermoto, disponible en pièces et en configuration complète.",
+    unavailable: "Indisponible",
+    partnersTitle: "Nos partenaires",
+    partnersSub: "Marques officielles distribuées et partenaires techniques de RIDE ON.",
+  },
+  en: {
+    heroBadge: "New · L1EB Edition",
+    heroLead: "10,000 W · 410 Nm · 90 km range. Our flagship electric motorcycle, road-homologated L1e‑B, ready to ride.",
+    heroCtaFeatured: "Discover the Falcon Pro L1EB",
+    heroCtaAll: "See all motorcycles",
+    weight: "Weight",
+    yvoltText: "New brand of dirt and supermoto electric bikes, available as parts or fully built.",
+    unavailable: "Unavailable",
+    partnersTitle: "Our partners",
+    partnersSub: "Official distributed brands and technical partners of RIDE ON.",
+  },
+  es: {
+    heroBadge: "Nuevo · Edición L1EB",
+    heroLead: "10.000 W · 410 Nm · 90 km de autonomía. Nuestra moto eléctrica estrella, homologada para carretera L1e‑B, lista para rodar.",
+    heroCtaFeatured: "Descubre la Falcon Pro L1EB",
+    heroCtaAll: "Ver todas las motos",
+    weight: "Peso",
+    yvoltText: "Nueva marca de motos eléctricas dirt y supermoto, disponible en piezas y en configuración completa.",
+    unavailable: "No disponible",
+    partnersTitle: "Nuestros socios",
+    partnersSub: "Marcas oficiales distribuidas y socios técnicos de RIDE ON.",
+  },
+};
+
 function HomePage() {
   const { locale, t } = useI18n();
+  const c = COPY[locale];
   const { data: products = [], isLoading } = useQuery({
     queryKey: ["products", "home", locale],
     queryFn: () =>
       fetchProducts(12, undefined, { language: SHOPIFY_LANG[locale], country: SHOPIFY_COUNTRY[locale] }),
   });
 
-  // Mettre en avant la Falcon Pro L1EB si présente dans le catalogue
+  // Destacar la Falcon Pro L1EB si está en el catálogo
   const findFalconL1eb = (list: typeof products) =>
     list.find((p) => /l1eb|homologu/i.test(p.node.title) || /l1eb|homologu/i.test(p.node.handle));
   const featured = findFalconL1eb(products);
 
   return (
     <SiteLayout>
-      {/* HERO — Falcon Pro L1EB en vedette, vidéo logo + nous en fond plein écran */}
+      {/* HERO — Falcon Pro L1EB destacada, vídeo de logo a pantalla completa de fondo */}
       <section className="relative min-h-[640px] md:min-h-[88vh] w-full overflow-hidden -mt-20 pt-20 flex items-end">
-        {/* Vidéo de fond pleine largeur */}
+        {/* Vídeo de fondo a todo el ancho */}
         <video
           src={heroVideo.url}
           autoPlay
@@ -58,24 +96,24 @@ function HomePage() {
           preload="metadata"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        {/* Overlay pour lisibilité du texte */}
+        {/* Overlay para legibilidad del texto */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-zinc-950/30" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-zinc-950/90 via-zinc-950/50 to-zinc-950/10 md:to-transparent" />
 
-        {/* Moto L1EB en transparent par-dessus la vidéo — masquée sur mobile pour éviter le chevauchement du titre */}
+        {/* Moto L1EB recortada sobre el vídeo — oculta en móvil para no solapar el título */}
         <img
           src={falconL1ebCutout}
           alt="79BIKE Falcon Pro L1EB"
           className="pointer-events-none hidden md:block absolute right-0 bottom-0 w-[58vw] max-w-[900px] md:min-w-[420px] object-contain drop-shadow-[0_25px_60px_rgba(0,191,223,0.25)] select-none"
         />
 
-        {/* Contenu */}
+        {/* Contenido */}
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 pb-12 sm:pb-16 md:pb-20 pt-24 md:pt-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end w-full">
           <div className="lg:col-span-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-cyan/15 border border-brand-cyan/30 mb-6 backdrop-blur">
               <span className="size-2 rounded-full bg-brand-cyan animate-pulse" />
               <span className="text-[10px] font-semibold uppercase tracking-widest text-brand-cyan">
-                Nouveau · Édition L1EB
+                {c.heroBadge}
               </span>
             </div>
             <h1 className="font-display text-[2.75rem] sm:text-5xl md:text-7xl font-semibold text-white leading-[0.95] text-balance mb-5 sm:mb-6 drop-shadow-2xl">
@@ -83,8 +121,7 @@ function HomePage() {
               <span className="text-brand-cyan">L1EB</span>
             </h1>
             <p className="text-base sm:text-lg text-zinc-200 max-w-[44ch] text-pretty mb-7 sm:mb-8 drop-shadow">
-              10 000 W · 410 Nm · 90 km d'autonomie. Notre moto électrique phare,
-              homologuée route L1e‑B, prête à rouler.
+              {c.heroLead}
             </p>
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-10">
               {featured ? (
@@ -93,7 +130,7 @@ function HomePage() {
                   params={{ lang: locale, handle: featured.node.handle }}
                   className="bg-brand-cyan text-zinc-950 text-sm font-semibold py-3.5 px-8 rounded-xl text-center min-h-11 inline-flex items-center justify-center hover:bg-brand-cyan/90 transition-colors"
                 >
-                  Découvrir la Falcon Pro L1EB
+                  {c.heroCtaFeatured}
                 </Link>
               ) : (
                 <Link
@@ -109,7 +146,7 @@ function HomePage() {
                 params={{ lang: locale }}
                 className="bg-zinc-950/60 backdrop-blur text-white text-sm font-medium py-3.5 px-8 rounded-xl text-center min-h-11 inline-flex items-center justify-center border border-white/20 hover:border-white/40 transition-colors"
               >
-                Voir toutes les motos
+                {c.heroCtaAll}
               </Link>
             </div>
             <div className="bg-zinc-950/70 backdrop-blur border border-white/10 p-4 sm:p-5 rounded-2xl grid grid-cols-3 gap-3 sm:gap-6 divide-x divide-white/10 max-w-md">
@@ -123,7 +160,7 @@ function HomePage() {
               </div>
               <div className="pl-3 sm:pl-6">
                 <div className="text-lg sm:text-xl md:text-2xl font-display font-medium text-brand-cyan whitespace-nowrap">59 kg</div>
-                <div className="text-[9px] sm:text-[10px] uppercase tracking-wider text-zinc-400">Poids</div>
+                <div className="text-[9px] sm:text-[10px] uppercase tracking-wider text-zinc-400">{c.weight}</div>
               </div>
             </div>
           </div>
@@ -172,7 +209,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-5 sm:px-6">
           <div className="mb-10 md:mb-16">
             <h2 className="font-display text-3xl sm:text-4xl font-medium text-white mb-4">Y‑VOLT</h2>
-            <p className="text-zinc-400 max-w-xl">Nouvelle marque de motos électriques dirt et supermoto, disponible en pièces et en configuration complète.</p>
+            <p className="text-zinc-400 max-w-xl">{c.yvoltText}</p>
             <div className="h-1 w-20 bg-brand-cyan mt-6" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -202,10 +239,10 @@ function HomePage() {
                   <p className="text-[11px] uppercase tracking-widest text-zinc-500 mb-4">{p.vendor}</p>
                   <div className="mt-auto flex items-end justify-between gap-3">
                     <span className="text-brand-cyan font-display text-lg whitespace-nowrap">
-                      {new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(p.priceEur)}
+                      {new Intl.NumberFormat(locale === "es" ? "es-ES" : locale === "en" ? "en-GB" : "fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(p.priceEur)}
                     </span>
                     {!p.available && (
-                      <span className="text-[10px] uppercase tracking-widest text-zinc-500">Indisponible</span>
+                      <span className="text-[10px] uppercase tracking-widest text-zinc-500">{c.unavailable}</span>
                     )}
                   </div>
                 </div>
@@ -260,7 +297,7 @@ function HomePage() {
         </div>
       </section>
 
-      <Partners title="Nos partenaires" subtitle="Marques officielles distribuées et partenaires techniques de RIDE ON." />
+      <Partners title={c.partnersTitle} subtitle={c.partnersSub} />
 
       <section className="py-20 md:py-32 bg-zinc-900/50">
         <div className="max-w-7xl mx-auto px-5 sm:px-6">
@@ -293,4 +330,3 @@ function HomePage() {
     </SiteLayout>
   );
 }
-

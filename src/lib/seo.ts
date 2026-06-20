@@ -5,10 +5,12 @@
 
 import { LOCALES, type Locale } from "@/i18n/config";
 
-// IMPORTANT: update this to the production custom domain once purchased
-// (e.g. https://www.rideondistribution.com). Used by all canonical, og:url,
-// hreflang, and sitemap.xml URLs.
-export const SITE_URL = "https://www.rideondistribution.com";
+// Dominio canónico de producción del sitio .ES.
+// Este repo (rideondistribution.es) funciona de forma INDEPENDIENTE de la .com
+// (solo comparten diseño y logos), por lo que canonicaliza a su PROPIO dominio.
+// Lo usan todos los canonical, og:url, hreflang y las URLs del sitemap.xml.
+// NOTA: si el dominio se sirve con www, cambiar a "https://www.rideondistribution.es".
+export const SITE_URL = "https://rideondistribution.es";
 
 /** Build absolute URL from a path (must start with "/"). */
 export const abs = (path: string) => `${SITE_URL}${path}`;
@@ -29,7 +31,7 @@ export function hreflangLinks(pathWithoutLang: string, locale: Locale) {
       hrefLang: l,
       href: abs(`/${l}${norm}`),
     })),
-    { rel: "alternate" as const, hrefLang: "x-default", href: abs(`/fr${norm}`) },
+    { rel: "alternate" as const, hrefLang: "x-default", href: abs(`/es${norm}`) },
   ];
 }
 

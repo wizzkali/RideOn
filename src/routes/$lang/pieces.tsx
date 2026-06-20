@@ -120,7 +120,7 @@ function classifySector(p: Part): Sector {
 
 export const Route = createFileRoute("/$lang/pieces")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     return {
       meta: [

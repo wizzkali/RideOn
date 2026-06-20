@@ -12,7 +12,7 @@ import { abs, hreflangLinks, ogUrlMeta, productLd, breadcrumbLd, jsonLdScript } 
 
 export const Route = createFileRoute("/$lang/product/$handle")({
   loader: async ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     try {
       const product = await fetchProductByHandle(params.handle, {
         language: SHOPIFY_LANG[l],
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/$lang/product/$handle")({
     }
   },
   head: ({ params, loaderData }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const p = loaderData?.product ?? null;
     const title = p
       ? `${p.title} — Ride On Distribution`
@@ -77,7 +77,7 @@ export const Route = createFileRoute("/$lang/product/$handle")({
   component: ProductPage,
   notFoundComponent: () => {
     const { lang } = Route.useParams();
-    const d = getDict(isLocale(lang) ? (lang as Locale) : "fr");
+    const d = getDict(isLocale(lang) ? (lang as Locale) : "es");
     return (
       <SiteLayout>
         <div className="max-w-3xl mx-auto px-6 py-32 text-center">

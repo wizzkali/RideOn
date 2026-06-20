@@ -18,7 +18,7 @@ export function ShowroomLongContent({ data }: { data: ShowroomSEO }) {
       <section className="py-20 border-t border-zinc-900">
         <div className="max-w-5xl mx-auto px-6">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-cyan mb-4">
-            <Sparkles className="size-3.5" /> À propos
+            <Sparkles className="size-3.5" /> Presentación
           </div>
           <h2 className="font-display text-3xl md:text-4xl text-white mb-6 leading-tight">
             {data.introTitle}

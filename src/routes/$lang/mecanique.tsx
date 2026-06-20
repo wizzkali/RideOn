@@ -12,15 +12,15 @@ import atelierHands from "@/assets/atelier-hands-v3.jpg.asset.json";
 const META: Record<Locale, { title: string; desc: string }> = {
   fr: {
     title: "Atelier mécanique — Ride On Distribution",
-    desc: "Notre atelier mécanique : entretien, réparation, préparation et tuning pour motos électriques 79Bike. Barcelonne et Saint-Gaudens.",
+    desc: "Notre atelier mécanique : entretien, réparation, préparation et tuning pour motos électriques 79Bike. Barcelone et Saint-Gaudens.",
   },
   en: {
     title: "Workshop — Ride On Distribution",
-    desc: "Our mechanical workshop: service, repair, prep and tuning for 79Bike electric motorcycles. Barcelonne and Saint-Gaudens.",
+    desc: "Our mechanical workshop: service, repair, prep and tuning for 79Bike electric motorcycles. Barcelona and Saint-Gaudens.",
   },
   es: {
     title: "Taller mecánico — Ride On Distribution",
-    desc: "Nuestro taller mecánico: mantenimiento, reparación, preparación y tuning para motos eléctricas 79Bike. Barcelonne y Saint-Gaudens.",
+    desc: "Nuestro taller mecánico: mantenimiento, reparación, preparación y tuning para motos eléctricas 79Bike. Barcelona y Saint-Gaudens.",
   },
 };
 
@@ -29,6 +29,8 @@ const CONTENT: Record<Locale, {
   title: string;
   titleAccent: string;
   subtitle: string;
+  servicesHead: string;
+  servicesHeadMuted: string;
   servicesTitle: string;
   services: { title: string; text: string }[];
   processTitle: string;
@@ -36,13 +38,16 @@ const CONTENT: Record<Locale, {
   ctaTitle: string;
   ctaText: string;
   ctaButton: string;
+  imgAlt: string;
 }> = {
   fr: {
     eyebrow: "Atelier officiel",
     title: "Atelier",
     titleAccent: "mécanique.",
     subtitle:
-      "Entretien, réparation, préparation. Notre atelier à Barcelonne et Saint-Gaudens prend en charge votre moto électrique, du contrôle annuel au montage de pièces performance.",
+      "Entretien, réparation, préparation. Notre atelier à Barcelone et Saint-Gaudens prend en charge votre moto électrique, du contrôle annuel au montage de pièces performance.",
+    servicesHead: "L'expertise atelier,",
+    servicesHeadMuted: "au service de votre machine.",
     servicesTitle: "Nos prestations",
     services: [
       { title: "Entretien complet", text: "Contrôle 360° : chaîne, freins, suspensions, électronique, mise à jour firmware." },
@@ -62,13 +67,16 @@ const CONTENT: Record<Locale, {
     ctaTitle: "Besoin d'un rendez-vous atelier ?",
     ctaText: "Décrivez votre demande, on revient vers vous sous 24h.",
     ctaButton: "Contacter l'atelier",
+    imgAlt: "Mécanicien 79Bike au travail sur une moto électrique",
   },
   en: {
     eyebrow: "Official workshop",
     title: "Mechanical",
     titleAccent: "workshop.",
     subtitle:
-      "Service, repair, prep. Our Barcelonne and Saint-Gaudens workshop handles your electric bike, from annual checkup to performance parts install.",
+      "Service, repair, prep. Our Barcelona and Saint-Gaudens workshop handles your electric bike, from annual checkup to performance parts install.",
+    servicesHead: "Workshop expertise,",
+    servicesHeadMuted: "at the service of your machine.",
     servicesTitle: "Services",
     services: [
       { title: "Full service", text: "360° check: chain, brakes, suspension, electronics, firmware update." },
@@ -88,13 +96,16 @@ const CONTENT: Record<Locale, {
     ctaTitle: "Need a workshop appointment?",
     ctaText: "Describe your request — we reply within 24h.",
     ctaButton: "Contact the workshop",
+    imgAlt: "79Bike mechanic working on an electric motorcycle",
   },
   es: {
     eyebrow: "Taller oficial",
     title: "Taller",
     titleAccent: "mecánico.",
     subtitle:
-      "Mantenimiento, reparación, preparación. Nuestro taller en Barcelonne y Saint-Gaudens se ocupa de tu moto eléctrica, del control anual al montaje de piezas performance.",
+      "Mantenimiento, reparación, preparación. Nuestro taller en Barcelona y Saint-Gaudens se ocupa de tu moto eléctrica, del control anual al montaje de piezas de alto rendimiento.",
+    servicesHead: "La experiencia del taller,",
+    servicesHeadMuted: "al servicio de tu máquina.",
     servicesTitle: "Nuestros servicios",
     services: [
       { title: "Mantenimiento completo", text: "Control 360°: cadena, frenos, suspensiones, electrónica, firmware." },
@@ -108,18 +119,19 @@ const CONTENT: Record<Locale, {
     process: [
       { step: "01", title: "Cita", text: "Teléfono o formulario, hueco en 48h." },
       { step: "02", title: "Diagnóstico", text: "Inspección completa y presupuesto antes de intervenir." },
-      { step: "03", title: "Intervención", text: "Reparación por técnicos formados 79Bike, piezas originales." },
+      { step: "03", title: "Intervención", text: "Reparación por técnicos formados por 79Bike, piezas originales." },
       { step: "04", title: "Entrega", text: "Prueba de validación y entrega con informe de taller." },
     ],
     ctaTitle: "¿Necesitas cita en el taller?",
     ctaText: "Cuéntanos tu solicitud, respondemos en 24h.",
     ctaButton: "Contactar el taller",
+    imgAlt: "Mecánico 79Bike trabajando en una moto eléctrica",
   },
 };
 
 export const Route = createFileRoute("/$lang/mecanique")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const m = META[l];
     return {
       meta: [
@@ -151,7 +163,7 @@ function MecaniquePage() {
       <div className="relative border-b border-zinc-900 overflow-hidden">
         <img
           src={atelierHands.url}
-          alt="Mécanicien 79Bike au travail sur un vélo électrique"
+          alt={c.imgAlt}
           loading="lazy"
           width={1920}
           height={1080}
@@ -166,7 +178,7 @@ function MecaniquePage() {
                 — {c.servicesTitle}
               </div>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.05]">
-                L'expertise atelier, <span className="text-zinc-500">au service de votre machine.</span>
+                {c.servicesHead} <span className="text-zinc-500">{c.servicesHeadMuted}</span>
               </h2>
             </div>
 
@@ -226,7 +238,7 @@ function MecaniquePage() {
       <ContactForm
         title={c.ctaTitle}
         subtitle={c.ctaText}
-        contextLabel="Mécanique"
+        contextLabel="Taller"
         requestTypes={c.services.map((s) => s.title)}
       />
     </SiteLayout>

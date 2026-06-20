@@ -14,7 +14,7 @@ import barcelonaBg from "@/assets/barcelona-bg.jpg.asset.json";
 
 export const Route = createFileRoute("/$lang/barcelone")({
   head: ({ params }) => {
-    const l = isLocale(params.lang) ? (params.lang as Locale) : "fr";
+    const l = isLocale(params.lang) ? (params.lang as Locale) : "es";
     const d = getDict(l);
     const seo = SHOWROOM_SEO.barcelona[l];
     return {
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/$lang/barcelone")({
             country: "ES",
             lat: 41.3851,
             lng: 2.1734,
-            email: "barcelona@rideon-distribution.fr",
+            email: "contacto@rideondistribution.com",
             image: abs(barcelonaHero.url),
             sameAs: ["https://www.instagram.com/rideondistribution.es"],
             openingHours: ["Mo-Fr 09:00-18:00", "Sa 10:00-17:00"],
@@ -110,7 +110,7 @@ function BarcelonePage() {
           {[
             { Icon: MapPin, title: s.address, body: s.addressVal },
             { Icon: Clock, title: s.hours, body: s.hoursVal },
-            { Icon: Mail, title: s.contact, body: "barcelona@rideon-distribution.fr" },
+            { Icon: Mail, title: s.contact, body: "contacto@rideondistribution.com" },
           ].map(({ Icon, title, body }) => (
             <div
               key={title}
